@@ -1,9 +1,12 @@
 {
-    "Identifier": "",
-    "Slug": "",
-    "Status": "",
-    "Title": "",
-    "Description": "",
+    "Identifier": "eos4x30",
+    "Slug": "pmapper-3d",
+    "Status": "In progress",
+    "Title": "3D pharmacophore descriptor",
+    "Description": [
+        "The Pharmacophore mapper identifies common 3D pharmacophores of active compounds against a specific target",
+        "and represents them as a signature amenable for donwstream ML tasks"
+    ],
     "Mode": "",
     "Task": [],
     "Input": [],
@@ -12,8 +15,11 @@
     "Output Type": [],
     "Output Shape": "",
     "Interpretation": "",
-    "Tag": [],
-    "Publication": "",
-    "Source Code": "",
-    "License": ""
+    "Tag": [
+        "Fingerprint",
+        "Descriptor"
+    ],
+    "Publication": "https://www.mdpi.com/1422-0067/20/23/5834",
+    "Source Code": "https://github.com/DrrDom/pmapper",
+    "License": "BSD-3.0"
 }
