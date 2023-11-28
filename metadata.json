@@ -4,7 +4,7 @@
     "Status": "Ready",
     "Title": "3D pharmacophore descriptor",
     "Description": [
-        "The Pharmacophore mapper identifies common 3D pharmacophores of active compounds against a specific target and represents them as a signature amenable for donwstream ML tasks. Signatures uniquely encode 3D pharmacophores with hashes suitable for fast identification of identical pharmacophores"
+        "The pharmacophore mapper (pmapper) identifies common 3D pharmacophores of active compounds against a specific target and uniquely encodes them with hashes suitable for fast identification of identical pharmacophores. The obtained signatures are amenable for downstream ML tasks."
     ],
     "Mode": "Pretrained",
     "Task": [
