@@ -1,23 +1,30 @@
 {
     "Identifier": "eos4x30",
     "Slug": "pmapper-3d",
-    "Status": "In progress",
+    "Status": "Ready",
     "Title": "3D pharmacophore descriptor",
     "Description": [
-        "The Pharmacophore mapper identifies common 3D pharmacophores of active compounds against a specific target",
-        "and represents them as a signature amenable for donwstream ML tasks"
+        "The Pharmacophore mapper identifies common 3D pharmacophores of active compounds against a specific target and represents them as a signature amenable for donwstream ML tasks. Signatures uniquely encode 3D pharmacophores with hashes suitable for fast identification of identical pharmacophores"
     ],
-    "Mode": "",
-    "Task": [],
-    "Input": [],
-    "Input Shape": "",
-    "Output": [],
-    "Output Type": [],
-    "Output Shape": "",
-    "Interpretation": "",
-    "Tag": [
-        "Fingerprint",
+    "Mode": "Pretrained",
+    "Task": [
+        "Representation"
+    ],
+    "Input": [
+        "Compound"
+    ],
+    "Input Shape": "Single",
+    "Output": [
         "Descriptor"
+    ],
+    "Output Type": [
+        "Integer"
+    ],
+    "Output Shape": "List",
+    "Interpretation": "vector representation of pharmacophores",
+    "Tag": [
+        "Descriptor",
+        "Fingerprint"
     ],
     "Publication": "https://www.mdpi.com/1422-0067/20/23/5834",
     "Source Code": "https://github.com/DrrDom/pmapper",
