@@ -26,7 +26,7 @@ The pharmacophore mapper (pmapper) identifies common 3D pharmacophores of active
 ## Ersilia model URLs
 * [GitHub](https://github.com/ersilia-os/eos4x30)
 * [AWS S3](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4x30.zip)
-* [DockerHub](https://hub.docker.com/r/ersiliaos/eos4x30) (AMD64, ARM64)
+* [DockerHub](https://hub.docker.com/r/ersiliaos/eos4x30) (AMD64)
 
 ## Citation
 

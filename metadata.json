@@ -30,7 +30,6 @@
     "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4x30.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos4x30",
     "Docker Architecture": [
-        "AMD64",
-        "ARM64"
+        "AMD64"
     ]
 }
