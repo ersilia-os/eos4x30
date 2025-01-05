@@ -41,6 +41,6 @@ assert input_len == output_len
 # write output in a .csv file
 with open(output_file, "w") as f:
     writer = csv.writer(f)
-    writer.writerow(["pmapper-{}".format(i) for i in range(outputs.shape[1])])  # header
+    writer.writerow(["dimension_{0}".format(str(i).zfill(4)) for i in range(outputs.shape[1])])  # header
     for o in outputs:
         writer.writerow(o)
