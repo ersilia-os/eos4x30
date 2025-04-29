@@ -3,21 +3,18 @@
     "Slug": "pmapper-3d",
     "Status": "Ready",
     "Title": "3D pharmacophore descriptor",
-    "Description": "The pharmacophore mapper (pmapper) identifies common 3D pharmacophores of active compounds against a specific target and uniquely encodes them with hashes suitable for fast identification of identical pharmacophores. The obtained signatures are amenable for downstream ML tasks.\n",
+    "Description": "The pharmacophore mapper (pmapper) identifies common 3D pharmacophores of active compounds against a specific target and uniquely encodes them with hashes suitable for fast identification of identical pharmacophores. The obtained signatures are amenable for downstream ML tasks.",
+    "Deployment": [
+        "Local"
+    ],
     "Source": "Local",
     "Source Type": "External",
+    "Task": "Representation",
+    "Subtask": "Featurization",
     "Input": [
         "Compound"
     ],
     "Input Dimension": 1,
-    "Task": "Representation",
-    "Subtask": "Featurization",
-    "Biomedical Area": [
-        "Any"
-    ],
-    "Target Organism": [
-        "Not Applicable"
-    ],
     "Output": [
         "Value"
     ],
@@ -28,19 +25,22 @@
         "Descriptor",
         "Fingerprint"
     ],
-    "Publication": "https://www.mdpi.com/1422-0067/20/23/5834",
+    "Biomedical Area": [
+        "Any"
+    ],
+    "Target Organism": [
+        "Not Applicable"
+    ],
     "Publication Type": "Peer reviewed",
     "Publication Year": 2019,
+    "Publication": "https://www.mdpi.com/1422-0067/20/23/5834",
     "Source Code": "https://github.com/DrrDom/pmapper",
     "License": "BSD-3-Clause",
     "Contributor": "GemmaTuron",
     "Incorporation Date": "2023-11-28",
+    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4x30.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos4x30",
     "Docker Architecture": [
         "AMD64"
-    ],
-    "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4x30.zip",
-    "Deployment": [
-        "Local"
     ]
 }
