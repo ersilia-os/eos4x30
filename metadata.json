@@ -41,8 +41,18 @@
     "S3": "https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4x30.zip",
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos4x30",
     "Docker Architecture": [
-        "AMD64"
+        "AMD64",
+        "ARM64"
     ],
+    "Docker Pack Method": "FastAPI",
     "Model Size": 1.0,
-    "Environment Size": 6200.0
+    "Environment Size": 6200.0,
+    "Image Size": 6060.25,
+    "Computational Performance 4": 42.01,
+    "Computational Performance 7": 29.26,
+    "Computational Performance 12": 33.57,
+    "Computational Performance 20": 35.22,
+    "Computational Performance 34": 42.21,
+    "Computational Performance 58": 45.77,
+    "Computational Performance 100": 488.17
 }
