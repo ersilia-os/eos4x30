@@ -32,6 +32,7 @@ with open(input_file, "r") as f:
 
 # run model
 outputs = my_model(smiles_list)
+outputs_int = outputs.astype(int)
 
 #check input and output have the same lenght
 input_len = len(smiles_list)
@@ -41,6 +42,6 @@ assert input_len == output_len
 # write output in a .csv file
 with open(output_file, "w") as f:
     writer = csv.writer(f)
-    writer.writerow(["dim_{0}".format(str(i).zfill(4)) for i in range(outputs.shape[1])])  # header
-    for o in outputs:
+    writer.writerow(["dim_{0}".format(str(i).zfill(4)) for i in range(outputs_int.shape[1])])  # header
+    for o in outputs_int:
         writer.writerow(o)
