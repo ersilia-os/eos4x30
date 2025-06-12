@@ -52,10 +52,6 @@ _10 of 2048 columns are shown_
 - **Environment Size (Mb):** `6200`
 - **Image Size (Mb):** `6060.25`
 
-**Computational Performance (seconds):**
-- 4 inputs: `42.01`
-- 20 inputs: `35.22`
-- 100 inputs: `488.17`
 
 ### References
 - **Source Code**: [https://github.com/DrrDom/pmapper](https://github.com/DrrDom/pmapper)
