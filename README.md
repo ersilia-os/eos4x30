@@ -44,14 +44,18 @@ _10 of 2048 columns are shown_
 - **Source:** `Local`
 - **Source Type:** `External`
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos4x30](https://hub.docker.com/r/ersiliaos/eos4x30)
-- **Docker Architecture:** `AMD64`, `ARM64`
+- **Docker Architecture:** `AMD64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4x30.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4x30.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `1`
 - **Environment Size (Mb):** `6133`
-- **Image Size (Mb):** `6060.25`
+- **Image Size (Mb):** `5980.38`
 
+**Computational Performance (seconds):**
+- 10 inputs: `38.51`
+- 100 inputs: `81.13`
+- 10000 inputs: `-1`
 
 ### References
 - **Source Code**: [https://github.com/DrrDom/pmapper](https://github.com/DrrDom/pmapper)
