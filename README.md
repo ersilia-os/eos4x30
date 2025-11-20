@@ -4,6 +4,7 @@ The pharmacophore mapper (pmapper) identifies common 3D pharmacophores of active
 
 This model was incorporated on 2023-11-28.
 
+
 ## Information
 ### Identifiers
 - **Ersilia Identifier:** `eos4x30`
@@ -13,7 +14,7 @@ This model was incorporated on 2023-11-28.
 - **Task:** `Representation`
 - **Subtask:** `Featurization`
 - **Biomedical Area:** `Any`
-- **Target Organism:** `Not Applicable`
+- **Target Organism:** `Any`
 - **Tags:** `Descriptor`, `Fingerprint`
 
 ### Input
