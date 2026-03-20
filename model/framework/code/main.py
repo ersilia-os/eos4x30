@@ -2,6 +2,7 @@
 import os
 import csv
 import sys
+import numpy as np
 import datamol as dm
 import molfeat
 from molfeat.trans.base import MoleculeTransformer
@@ -15,33 +16,38 @@ output_file = sys.argv[2]
 # current file directory
 root = os.path.dirname(os.path.abspath(__file__))
 
-# my model
-def my_model(smiles):
-    mols = [dm.to_mol(s) for s in smiles]
-    molecules_with_3D = [dm.conformers.generate(m, n_confs=1, minimize_energy=True) for m in mols]
-    transformer = MoleculeTransformer(featurizer=Pharmacophore3D(factory='pmapper'), dtype=float)    
-    features = transformer(molecules_with_3D) 
-    return features
-
-
 # read SMILES from .csv file, assuming one column with header
 with open(input_file, "r") as f:
     reader = csv.reader(f)
     next(reader)  # skip header
     smiles_list = [r[0] for r in reader]
 
-# run model
-outputs = my_model(smiles_list)
-outputs_int = outputs.astype(int)
+# run model: generate 3D conformers and compute pharmacophore features per molecule
+transformer = MoleculeTransformer(featurizer=Pharmacophore3D(factory='pmapper'), dtype=float)
 
-#check input and output have the same lenght
-input_len = len(smiles_list)
-output_len = len(outputs)
-assert input_len == output_len
+n_features = None
+outputs = []
+for smi in smiles_list:
+    try:
+        mol = dm.to_mol(smi)
+        mol_3d = dm.conformers.generate(mol, n_confs=1, minimize_energy=True)
+        feats = transformer([mol_3d])[0]
+        if n_features is None:
+            n_features = len(feats)
+        outputs.append(feats)
+    except Exception:
+        outputs.append(None)
+
+# fill None rows with NaN once we know the feature size
+if n_features is None:
+    n_features = 0
+outputs = [o if o is not None else np.full(n_features, float("nan")) for o in outputs]
+
+assert len(outputs) == len(smiles_list)
 
 # write output in a .csv file
 with open(output_file, "w") as f:
     writer = csv.writer(f)
-    writer.writerow(["dim_{0}".format(str(i).zfill(4)) for i in range(outputs_int.shape[1])])  # header
-    for o in outputs_int:
+    writer.writerow(["dim_{0}".format(str(i).zfill(4)) for i in range(n_features)])
+    for o in outputs:
         writer.writerow(o)
