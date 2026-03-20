@@ -2,7 +2,7 @@
 
 The pharmacophore mapper (pmapper) identifies common 3D pharmacophores of active compounds against a specific target and uniquely encodes them with hashes suitable for fast identification of identical pharmacophores. The obtained signatures are amenable for downstream ML tasks.
 
-This model was incorporated on 2023-11-28.Last packaged on 2025-12-01.
+This model was incorporated on 2023-11-28.Last packaged on 2026-03-20.
 
 ## Information
 ### Identifiers
@@ -44,18 +44,18 @@ _10 of 2048 columns are shown_
 - **Source:** `Local`
 - **Source Type:** `External`
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos4x30](https://hub.docker.com/r/ersiliaos/eos4x30)
-- **Docker Architecture:** `AMD64`, `ARM64`
+- **Docker Architecture:** `AMD64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4x30.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4x30.zip)
 
 ### Resource Consumption
 - **Model Size (Mb):** `1`
 - **Environment Size (Mb):** `7977`
-- **Image Size (Mb):** `7680.87`
+- **Image Size (Mb):** `7918.34`
 
 **Computational Performance (seconds):**
-- 10 inputs: `30.08`
-- 100 inputs: `37.5`
-- 10000 inputs: `-1`
+- 10 inputs: `40.12`
+- 100 inputs: `45.7`
+- 10000 inputs: `1355.18`
 
 ### References
 - **Source Code**: [https://github.com/DrrDom/pmapper](https://github.com/DrrDom/pmapper)
