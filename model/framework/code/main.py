@@ -34,7 +34,7 @@ for smi in smiles_list:
         feats = transformer([mol_3d])[0]
         if n_features is None:
             n_features = len(feats)
-        outputs.append(feats)
+        outputs.append(feats.astype(int))
     except Exception:
         outputs.append(None)
 
