@@ -59,7 +59,7 @@ _10 of 2048 columns are shown_
 
 ### References
 - **Source Code**: [https://github.com/DrrDom/pmapper](https://github.com/DrrDom/pmapper)
-- **Publication**: [https://www.mdpi.com/1422-0067/20/23/5834](https://www.mdpi.com/1422-0067/20/23/5834)
+- **Publication**: [https://doi.org/10.3390/ijms20235834](https://doi.org/10.3390/ijms20235834)
 - **Publication Type:** `Peer reviewed`
 - **Publication Year:** `2019`
 - **Ersilia Contributor:** [GemmaTuron](https://github.com/GemmaTuron)
