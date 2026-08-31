@@ -48,6 +48,6 @@ assert len(outputs) == len(smiles_list)
 # write output in a .csv file
 with open(output_file, "w") as f:
     writer = csv.writer(f)
-    writer.writerow(["dim_{0}".format(str(i).zfill(4)) for i in range(n_features)])
+    writer.writerow(["feat_{0}".format(str(i).zfill(4)) for i in range(n_features)])
     for o in outputs:
         writer.writerow(o)
