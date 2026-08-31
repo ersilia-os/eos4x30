@@ -44,7 +44,7 @@
     "DockerHub": "https://hub.docker.com/r/ersiliaos/eos4x30",
     "Docker Architecture": "AMD64",
     "Model Size": 1.0,
-    "Environment Size": 7977.0,
+    "Environment Size": 5676.0,
     "Image Size": 7918.34,
     "Computational Performance 1": 40.12,
     "Computational Performance 2": 31.16,
