@@ -28,16 +28,16 @@ This model was incorporated on 2023-11-28.Last packaged on 2026-03-20.
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
 |------|------|-----------|-------------|
-| dim_0000 | integer |  | Pmapper dimension index 0 |
-| dim_0001 | integer |  | Pmapper dimension index 1 |
-| dim_0002 | integer |  | Pmapper dimension index 2 |
-| dim_0003 | integer |  | Pmapper dimension index 3 |
-| dim_0004 | integer |  | Pmapper dimension index 4 |
-| dim_0005 | integer |  | Pmapper dimension index 5 |
-| dim_0006 | integer |  | Pmapper dimension index 6 |
-| dim_0007 | integer |  | Pmapper dimension index 7 |
-| dim_0008 | integer |  | Pmapper dimension index 8 |
-| dim_0009 | integer |  | Pmapper dimension index 9 |
+| feat_0000 | integer |  | Pmapper feature index 0 |
+| feat_0001 | integer |  | Pmapper feature index 1 |
+| feat_0002 | integer |  | Pmapper feature index 2 |
+| feat_0003 | integer |  | Pmapper feature index 3 |
+| feat_0004 | integer |  | Pmapper feature index 4 |
+| feat_0005 | integer |  | Pmapper feature index 5 |
+| feat_0006 | integer |  | Pmapper feature index 6 |
+| feat_0007 | integer |  | Pmapper feature index 7 |
+| feat_0008 | integer |  | Pmapper feature index 8 |
+| feat_0009 | integer |  | Pmapper feature index 9 |
 
 _10 of 2048 columns are shown_
 ### Source and Deployment
