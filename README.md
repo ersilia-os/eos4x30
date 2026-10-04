@@ -1,6 +1,6 @@
 # 3D pharmacophore descriptor
 
-The pharmacophore mapper (pmapper) identifies common 3D pharmacophores of active compounds against a specific target and uniquely encodes them with hashes suitable for fast identification of identical pharmacophores. The obtained signatures are amenable for downstream ML tasks.
+Encodes which pharmacophoric arrangements a molecule can adopt, expressed as a 2,048-bit signature over three-dimensional feature triplets such as donor, acceptor and hydrophobe combinations. Polishchuk and colleagues derived the underlying models from molecular dynamics simulations rather than single static poses, so that the conformational range a ligand actually samples informs the description. The representation depends on the conformers generated, making it richer than a topological fingerprint but less reproducible.
 
 This model was incorporated on 2023-11-28.Last packaged on 2026-08-31.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2023-11-28.Last packaged on 2026-08-31.
 ### Output
 - **Output Dimension:** `2048`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** Vector representation of pharmacophores
+- **Interpretation:** 2048-bit signature of three-dimensional pharmacophore feature triplets.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
