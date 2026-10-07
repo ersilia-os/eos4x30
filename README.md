@@ -1,6 +1,6 @@
 # 3D pharmacophore descriptor
 
-Encodes which pharmacophoric arrangements a molecule can adopt, expressed as a 2,048-bit signature over three-dimensional feature triplets such as donor, acceptor and hydrophobe combinations. Polishchuk and colleagues derived the underlying models from molecular dynamics simulations rather than single static poses, so that the conformational range a ligand actually samples informs the description. The representation depends on the conformers generated, making it richer than a topological fingerprint but less reproducible.
+Describes a molecule by the three-dimensional arrangements of pharmacophoric features it presents, hashing every pair and triplet of features, with their interfeature distances binned at 1 Angstrom, into a 2,048-bit signature. The hashing scheme comes from Polishchuk and colleagues, who built it to recognise identical pharmacophores among the thousands extracted from molecular dynamics trajectories of protein-ligand complexes. Here a single energy-minimised conformer is generated per input, so the signature reflects one pose rather than a conformational ensemble.
 
 This model was incorporated on 2023-11-28.Last packaged on 2026-08-31.
 
@@ -23,7 +23,7 @@ This model was incorporated on 2023-11-28.Last packaged on 2026-08-31.
 ### Output
 - **Output Dimension:** `2048`
 - **Output Consistency:** `Fixed`
-- **Interpretation:** 2048-bit signature of three-dimensional pharmacophore feature triplets.
+- **Interpretation:** 2048-bit signature hashing pairs and triplets of pharmacophore features from one generated 3D conformer.
 
 Below are the **Output Columns** of the model:
 | Name | Type | Direction | Description |
