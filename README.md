@@ -2,7 +2,8 @@
 
 Describes a molecule by the three-dimensional arrangements of pharmacophoric features it presents, hashing every pair and triplet of features, with their interfeature distances binned at 1 Angstrom, into a 2,048-bit signature. The hashing scheme comes from Polishchuk and colleagues, who built it to recognise identical pharmacophores among the thousands extracted from molecular dynamics trajectories of protein-ligand complexes. Here a single energy-minimised conformer is generated per input, so the signature reflects one pose rather than a conformational ensemble.
 
-This model was incorporated on 2023-11-28.Last packaged on 2026-08-31.
+This model was incorporated on 2023-11-28.
+Last packaged on 2026-08-31.
 
 ## Information
 ### Identifiers
@@ -46,6 +47,7 @@ _10 of 2048 columns are shown_
 - **DockerHub**: [https://hub.docker.com/r/ersiliaos/eos4x30](https://hub.docker.com/r/ersiliaos/eos4x30)
 - **Docker Architecture:** `AMD64`, `ARM64`
 - **S3 Storage**: [https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4x30.zip](https://ersilia-models-zipped.s3.eu-central-1.amazonaws.com/eos4x30.zip)
+- **Apptainer**: [https://models-sif.s3.eu-north-1.amazonaws.com/eos4x30_v2.sif](https://models-sif.s3.eu-north-1.amazonaws.com/eos4x30_v2.sif)
 
 ### Resource Consumption
 - **Model Size (Mb):** `1`
